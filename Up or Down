@@ -1,0 +1,13 @@
+import random
+num = random.randint(1,100)
+gu = ""
+turn = 0
+while(not(gu == num)):
+    gu = int(input("Guess the number:  "))
+    if(gu>num):
+        print("Your guess was to high.")
+    elif(gu<num):
+        print("Your guess was to low.")
+    else:
+        print("You won! and took",turn,"turns.")
+    turn+=1
